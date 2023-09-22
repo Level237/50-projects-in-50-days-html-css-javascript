@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+
+}
+.search{
+    margin-top: 50vh;
+ height: 50px;
+    position: relative;
+}
+
+.search input{
+ width: 50px;
+ height: 50px;
+    border: none;
+   transition: width 0.3s ease;
+}
+
+.btn{
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    top:0px;
+    left: 2px;
+    width: 50px;
+    height: 52px;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus ,input:focus{
+    outline: none;
+}
+
+.search.active input{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
+
